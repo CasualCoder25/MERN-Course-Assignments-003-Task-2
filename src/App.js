@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import Calculator from "./components/Calculator"
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
+  const AppStyle = {
+    width: "100%",
+    height: "100vh",
+  }
+  const CalculatorStyle = {
+    width: "280px",
+    height: "380px",
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="Gradient-bg d-flex justify-content-center align-items-center"
+      style={AppStyle}
+    >
+      <div style={CalculatorStyle}>
+        <Calculator />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
